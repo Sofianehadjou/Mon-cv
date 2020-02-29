@@ -1,3 +1,4 @@
+
 body
 {
 	width: 1024px;
@@ -113,15 +114,14 @@ nav > div > p
 /*--- Colonne de droite---*/
 
 
-li > article
+.article
 {
-	
     margin-right: 0%;
     margin-left: 30%;
     margin-top: -34px;
 }
 
-section > div > img
+section > div > article > img
 {
 	width: 50px;
 	height: 50px;
@@ -129,7 +129,7 @@ section > div > img
 	margin-left: 65Px;
 }
 
-section > div > h2
+section > div > article > h2
 {
     margin-left: 140px;
 }
@@ -141,9 +141,9 @@ section > div > h2
  }
 
 .recommandations > div
-	 {
-	 	margin: auto;
-	 }
+{
+ 	margin: auto;
+}
 
 .ligne
 {
@@ -186,7 +186,6 @@ footer
 		width: auto;
 		display: flex;
 		flex-direction: column;
-
 	}
 
 	body
@@ -212,7 +211,6 @@ footer
     {
     	margin-left: 3px;
     	margin-right: 3px;
-
     }
 
 	 header  h2 > span
@@ -242,7 +240,12 @@ footer
 	 width: auto
 	}
 
-
+	#colonne_gauche > nav > img
+	{ 
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    }
 /*-----colonne droite responsive------*/
 
 	
@@ -251,7 +254,7 @@ footer
 		margin: auto;
 	}
 
-	li > article
+	.article
 	{
 	    margin-left: auto;
 	    margin-top: auto;
@@ -259,10 +262,10 @@ footer
 
 	section > div > h2
 	{
-		margin-left: 70px;d
+		margin-left: 70px;
 	}
 
-	section > div > img
+	article > img
 	{
 		width: 50px;
 		height: 50px;
